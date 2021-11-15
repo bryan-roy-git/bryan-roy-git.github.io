@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style_.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid content">
+            <a class="navbar-brand logo" href="#"><span class="log"><</span> <span class="logo">BRYANDEV</span><span class="log">\></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navigation_" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyects">Proyects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="main" id="home">
+        <div class="container-main">
+            <h1>BRYAN DEVELOPER</h1>
+            <div class="vertical-line"></div>
+            <p>
+                DEVELOPER <span class="typed"> </span>
+			</p>
+        </div>
+    </main>
+
+    <div class="container" id="about">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box-shadow-full">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="./img/pj.png" class="img" alt="">
+                        </div>
+                        <div class="col-sm-4">
+                            <p><span class="info_">Nombre: </span> <span>Bryan Chong</span></p>
+                            <p><span class="info_">Perfil: </span> <span>Full Stack Developer Junior</span></p>
+                            <p><span class="info_">Email: </span> <span>rchongcervantes@gmail.com</span></p>
+                            <p><span class="info_">Telefono: </span> <span>(+34) 608755319</span></p>
+                        </div>
+                        <div class="col-sm-5">
+                            <h3>Sobre mí</h3>
+                            <p>
+                                Soy Bryan, hace poco culminé el FPS DAW, me gustaria poder formar
+                                parte de una empresa en la que pueda poder aplicar todos mis conocimientos
+                                y al mismo poder seguir aprendiendo de otros desarolladores, ya que me apasoina 
+                                el mundo de la tecnologia y me encanta aprender.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="skills">
+        <div class="box-shadow-full">
+            <h1 class="sub_title">SKILLS</h1>
+            <div class="skillsCarrousel">
+                <div class="carouselbox">
+                </div>
+                <button class="left sliderButton" onclick="sliderLeft()"><</button>
+                <button class="right sliderButton" onclick="sliderRight()">></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div id="proyects">
+            <h1 class="title">PORTFOLIO</h1>
+            <div class="proyects">
+                <div class="proyect">
+                    <img src="./img/world.png" alt="" class="image_img">
+                    <div class="image_overlay image_overlay--blur">
+                        <div class="image_title">Country Quiz</div>
+                        <p class="image_description">Desarrollado: HTML, CSS, Javascript</p>
+                        <a class="proyect_buttoms" href="./quiz.html" target="_blank">Demo</a>
+                        <a class="proyect_buttoms" href="">Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container p-4 pb-0">
+            <section class="mb-4 text-center">
+                <ul class="social-icons">
+                    <li><a class="github" href="#"><i class="fa fa-github fa-2x"></i></a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="text-center p-3">
+            © <span id="year"></span> Copyright: BryanDev
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js" integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+
+    
+    <script src="./js/nav.js"></script>
+    <script src="./js/typed/typed.min.js"></script>
+
+
+    
+</body>
+</html>
