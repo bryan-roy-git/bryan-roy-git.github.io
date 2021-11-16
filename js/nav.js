@@ -9,8 +9,7 @@ jQuery('document').ready(function($){
             menu.addClass('show');
         }
     })
-
-
+    
     $('.main').css({
         height:$(window).height(),
         width:$(window).width()
@@ -34,9 +33,35 @@ jQuery('document').ready(function($){
         backDelay: 2000,
         loop: true,
     })
-
-
 })
+// Indicardor de menu
+
+const secciones = document.querySelectorAll('.seccion')
+const menuItems = document.querySelectorAll('.menu_items')
+
+const functionObserver = (entries =>{
+    entries.forEach(entry => {
+        if ( entry.isIntersecting ) {
+
+            const itemCurrent = Array.from(menuItems).find( item => item.dataset.url === entry.target.id)
+            itemCurrent.classList.add('active_')
+            for ( const item of menuItems ) {
+                if ( item != itemCurrent ) {
+                    item.classList.remove('active_')
+                }
+            }
+        }
+    });
+})
+const observer = new IntersectionObserver( functionObserver, { //callback
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.8 //porcentaje de la seccion para que resalte en el menu
+})
+console.log(secciones)
+console.log(menuItems)
+secciones.forEach( seccion => observer.observe(seccion))
+
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
@@ -95,4 +120,6 @@ function showData () {
 
 
 
-// select()
+
+
+

@@ -38,7 +38,7 @@ p {
 }
 
 .header_ a {
-  color: white ;
+  /* color: white ; */
   text-decoration: none !important;
 }
 .navbar{
@@ -59,7 +59,7 @@ p {
 
 .navigation_ ul li a {
   padding: 0.5rem 1rem !important;
-  color: #fff !important;
+  /* color: white; */
 }
 
 .navigation_ ul li a::after {
@@ -78,6 +78,10 @@ p {
   width: 60px;
 }
 .navigation_ ul li a:hover {
+  color: rgb(255, 174, 0) !important;
+}
+
+.active_{
   color: rgb(255, 174, 0) !important;
 }
 

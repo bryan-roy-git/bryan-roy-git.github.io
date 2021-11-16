@@ -24,76 +24,78 @@
             <div class="collapse navbar-collapse navigation_" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link menu_items " data-url="home" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link menu_items" data-url="about" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link menu_items" data-url="skills" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#proyects">Proyects</a>
+                        <a class="nav-link menu_items" data-url="proyects" href="#proyects">Proyects</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <main class="main" id="home">
-        <div class="container-main">
-            <h1>BRYAN DEVELOPER</h1>
-            <div class="vertical-line"></div>
-            <p>
-                DEVELOPER <span class="typed"> </span>
-			</p>
-        </div>
-    </main>
+    <main>
 
-    <div class="container" id="about">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="box-shadow-full">
-                    <div class="row">
-                        <div class="col-sm-3 perfil">
-                            <img src="./img/pj.png" class="img" alt=""><br><br>
-                            <a class="btn btn-primary" href="./cv/Bryan_CV.pdf" target="_blank"> Curriculum </a>
-                        </div>
-                        <div class="col-sm-3">
-                            <p><span class="info_">Nombre: </span> <span>Bryan Chong</span></p>
-                            <p><span class="info_">Perfil: </span> <span>Full Stack Developer Junior</span></p>
-                            <p><span class="info_">Email: </span> <span>rchongcervantes@gmail.com</span></p>
-                            <p><span class="info_">Telefono: </span> <span>(+34) 608755319</span></p>
-                        </div>
-                        <div class="col-sm-6">
-                            <h3>Sobre mí</h3>
-                            <p>
-                                Soy Bryan, hace poco culminé el FPS DAW, me gustaria poder formar
-                                parte de una empresa en la que pueda poder aplicar todos mis conocimientos
-                                y al mismo poder seguir aprendiendo de otros desarolladores, ya que me apasoina 
-                                el mundo de la tecnologia y me encanta aprender.
-                            </p>
+        <div class="main seccion" id="home">
+            <div class="container-main">
+                <h1>BRYAN DEVELOPER</h1>
+                <div class="vertical-line"></div>
+                <p>
+                    DEVELOPER <span class="typed"> </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="container seccion" id="about">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="box-shadow-full">
+                        <div class="row">
+                            <div class="col-sm-3 perfil">
+                                <img src="./img/pj.png" class="img" alt=""><br><br>
+                                <a class="btn btn-primary" href="./cv/Bryan_CV.pdf" target="_blank"> Curriculum </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <p><span class="info_">Nombre: </span> <span>Bryan Chong</span></p>
+                                <p><span class="info_">Perfil: </span> <span>Full Stack Developer Junior</span></p>
+                                <p><span class="info_">Email: </span> <span>rchongcervantes@gmail.com</span></p>
+                                <p><span class="info_">Telefono: </span> <span>(+34) 608755319</span></p>
+                            </div>
+                            <div class="col-sm-6">
+                                <h3>Sobre mí</h3>
+                                <p>
+                                    Soy Bryan, hace poco culminé el FPS DAW, me gustaria poder formar
+                                    parte de una empresa en la que pueda poder aplicar todos mis conocimientos
+                                    y al mismo poder seguir aprendiendo de otros desarolladores, cada día me levanto con
+                                    ganas de aprender temas nuevos, esto hace de mi una persona constante, curiosa y sin miedos
+                                    de enfrentarme a nuevos retos.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="container" id="skills">
-        <div class="box-shadow-full">
-            <h1 class="sub_title">SKILLS</h1>
-            <div class="skillsCarrousel">
-                <div class="carouselbox">
+        
+        <div class="container seccion" id="skills">
+            <div class="box-shadow-full">
+                <h1 class="sub_title">SKILLS</h1>
+                <div class="skillsCarrousel">
+                    <div class="carouselbox">
+                    </div>
+                    <button class="left sliderButton" onclick="sliderLeft()"><</button>
+                    <button class="right sliderButton" onclick="sliderRight()">></button>
                 </div>
-                <button class="left sliderButton" onclick="sliderLeft()"><</button>
-                <button class="right sliderButton" onclick="sliderRight()">></button>
             </div>
         </div>
-    </div>
 
 
-    <div class="container">
-        <div id="proyects">
+        <div class="container seccion" id="proyects">
             <h1 class="title">PORTFOLIO</h1>
             <div class="proyects">
                 <div class="proyect">
@@ -101,19 +103,20 @@
                     <div class="image_overlay image_overlay--blur">
                         <div class="image_title">Country Quiz</div>
                         <p class="image_description">Desarrollado: HTML, CSS, Javascript</p>
-                        <a class="proyect_buttoms" href="./quiz.html" target="_blank">Demo</a>
-                        <a class="proyect_buttoms" href="">Repository</a>
+                        <a class="proyect_buttoms" href="https://bryan-roy-git.github.io/countryQuiz/" target="_blank">Demo</a>
+                        <a class="proyect_buttoms" href="https://github.com/bryan-roy-git/countryQuiz/tree/main/docs" target="_blank">Repository</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+    </main>
 
     <footer class="footer">
         <div class="container p-4 pb-0">
             <section class="mb-4 text-center">
                 <ul class="social-icons">
-                    <li><a class="github" href="#"><i class="fa fa-github fa-2x"></i></a></li>
+                    <li><a class="github" href="https://github.com/bryan-roy-git"><i class="fa fa-github fa-2x"></i></a></li>
                 </ul>
             </section>
         </div>
@@ -122,14 +125,9 @@
         </div>
     </footer>
     
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" target="_blank"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js" integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
-
-    
     <script src="./js/nav.js"></script>
     <script src="./js/typed/typed.min.js"></script>
 
